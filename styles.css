@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+    --cor-primaria: ;
+    --cor-secundaria: ;
+    --cor-tercearia: ;
+    --font-primaria: 'Montserrat', sans-serif;
+    --font-secundaria: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
