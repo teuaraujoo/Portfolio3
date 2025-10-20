@@ -3,9 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 :root {
-    --cor-primaria: ;
-    --cor-secundaria: ;
-    --cor-tercearia: ;
+    --cor-primaria: rgb(0, 0, 0);
+    --cor-secundaria: rgb(86, 130, 177);
+    --cor-tercearia: rgb(13, 113, 221);
     --font-primaria: 'Montserrat', sans-serif;
     --font-secundaria: 'Open Sans', sans-serif;
 }
@@ -25,9 +25,199 @@ body::-webkit-scrollbar {
 }
 
 .nav {
-    
+    width: 100%;
+    height: 10vh;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1);
 }
 
 .nav-bar {
-    
+    display: flex;
+    gap: 40px;
+}
+.nav a {
+    font-family: var(--font-primaria);
+    font-size: medium;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav a:hover {
+    transform: scale(1.1);
+}
+
+.logo {
+    position: fixed;
+    left: 0;
+}
+
+/*
+.nav-bar {
+    border: solid 2px;
+    border-radius: 20%;
+    padding: 10px 40px 10px 40px;
+    display: flex;
+    gap: 40px;
+} 
+*/
+
+#home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.home-content {
+    display: flex;
+    gap: 15vw;
+    margin: 30px auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#home img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+    border-radius: 10%;
+    transition: all 0.5s;
+}
+
+#home img:hover {
+    transform: scale(1.1);
+}
+
+.home-text {
+    font-family: var(--font-primaria);
+}
+
+.home-text h1 {
+    margin-bottom: 40px;
+}
+
+.botao {
+  color: var(--cor-primaria);
+  text-decoration: none;
+  border: solid 2px var(--cor-primaria);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.bota:hover {
+  transform: scale(1.1);
+}
+
+.home-text span {
+  color: var(--cor-tercearia);
+}
+
+/* Redes Sociais */ 
+
+ul {
+  list-style: none;
+}
+
+.example-2 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  row-gap: 0.5rem;
+}
+.example-2 .icon-content {
+  margin: 40px 0px;
+  position: relative;
+}
+.example-2 .icon-content .tooltip {
+  position: absolute;
+  top: 20px;
+  left: 40%;
+  transform: translateX(50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: 5px;
+}
+.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #4d4d4d;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+.example-2 .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+.example-2 .icon-content a:hover {
+  color: white;
+}
+.example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+
+.example-2 .icon-content a[data-social="linkedin"] .filled,
+.example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+  background-color: #0274b3;
+}
+
+.example-2 .icon-content a[data-social="github"] .filled,
+.example-2 .icon-content a[data-social="github"] ~ .tooltip {
+  background-color: #24262a;
+}
+.example-2 .icon-content a[data-social="instagram"] .filled,
+.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5b51db,
+    #b33ab4,
+    #c135b4,
+    #e1306c,
+    #fd1f1f
+  );
+}
+.example-2 .icon-content a[data-social="youtube"] .filled,
+.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+  background-color: #ff0000;
 }
