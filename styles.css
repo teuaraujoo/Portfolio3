@@ -3,22 +3,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 :root {
-    --cor-primaria: rgb(0, 0, 0);
-    --cor-secundaria: rgb(110, 172, 218);
-    --cor-tercearia: rgb(13, 113, 221);
-    --background1: rgb(226, 226, 182);
-    --font-primaria: 'Montserrat', sans-serif;
-    --font-secundaria: 'Open Sans', sans-serif;
+  --cor-primaria: rgb(0, 0, 0);
+  --cor-secundaria: rgb(110, 172, 218);
+  --cor-tercearia: rgb(13, 113, 221);
+  --background1: rgb(226, 226, 182);
+  --font-primaria: 'Montserrat', sans-serif;
+  --font-secundaria: 'Open Sans', sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body, html {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -26,7 +26,7 @@ body, html {
 }
 
 
-/* barra de navegação */
+/* ----------------------- NAVEGATION BAR ---------------------- */
 
 
 
@@ -101,7 +101,7 @@ body, html {
   font-size: 14px;
 }
 
-/* Conteudo principal */
+/* ------------------------------ HOME SECTION ---------------------------------- */
 
 #home {
   height: 100vh;
@@ -145,7 +145,7 @@ body, html {
     margin-bottom: 40px;
 }
 
-/* Bota CTA */
+/* CTA BUTTON */
 
 .botao {
   width: 10vw;
@@ -175,7 +175,7 @@ body, html {
   color: var(--cor-tercearia);
 }
 
-/* Botao Redes Sociais */ 
+/* -------------------------- SOCIAL BUTTONS -------------------------- */ 
 
 ul {
   list-style: none;
@@ -277,7 +277,7 @@ ul {
   background-color: #ff0000;
 }
 
-/* Sessão Sobre */
+/* ---------------------- ABOUT SECTION -------------------- */
 
 #about {
   width: 100%;
@@ -349,7 +349,7 @@ ul {
   font-family: var(--font-secundaria);
 }
 
-/* Sessão skills */
+/* -------------------- SKILLS SECTION ---------------------------------- */
 
 #skills {
   height: 100vh;
@@ -404,6 +404,16 @@ ul {
   gap: 20px;
 }
 
+.skills-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* SKILLS CARDS */
+
 .box {
   position: relative;
   text-align: center;
@@ -416,7 +426,7 @@ ul {
   justify-content: center;
   align-items: center;
   border-radius: 0.2rem;
- cursor: pointer;
+  cursor: pointer;
   transition: 0.2s;
   color: white;
   font-family: var(--font-primaria);
@@ -444,13 +454,6 @@ ul {
   transform: scale(1.1);
 }
 
-.skills-cards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
 
 
 .certificaçoes {
@@ -467,7 +470,7 @@ ul {
   margin-bottom: 30px;
 }
 
-/* Card Certificaçoes */
+/* CERTIFICATIONS CARDS */
 
 .card {
   width: 100%;
@@ -524,7 +527,7 @@ color: white;
   font-family: var(--font-secundaria);
 }
 
-/* Sessão Projetos */
+/* ------------------------- PROJECTS SECTION ----------------------------- */
 
 #projects {
   height: 100vh;
