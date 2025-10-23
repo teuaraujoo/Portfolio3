@@ -391,8 +391,7 @@ ul {
 .skills-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10vw;
+  gap: 2vw;
 }
 
 .habilidades {
@@ -401,7 +400,8 @@ ul {
   justify-content: center;
   font-family: var(--font-primaria);
   flex-direction: column;
-  gap: 20px;
+  gap: 1rem;
+  padding-top: 10rem;
 }
 
 .skills-cards {
@@ -409,7 +409,7 @@ ul {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1.5rem;
 }
 
 /* SKILLS CARDS */
@@ -461,13 +461,13 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 1rem;
   width: 100%;
   font-family: var(--font-primaria);
 }
 
 .certificaçoes h1 {
-  margin-bottom: 30px;
+  margin-bottom: 1.5rem;
 }
 
 /* CERTIFICATIONS CARDS */
@@ -482,7 +482,7 @@ ul {
   align-items: center;
   justify-content: left;
   backdrop-filter: blur(10px);
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease;
 }
 
 .card:hover {
@@ -574,4 +574,13 @@ color: white;
 
 .title-projetos:hover::before {
   width: 100%;
+}
+
+/* ------------------------ CONTACT SECTION ----------------- */
+
+#contact {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
